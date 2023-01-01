@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background: url(../images/bg.png);
+  position: relative;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.marauders_title,
+.marauders_main {
+  text-align: center;
+}
+
+.marauders_title img {
+  width: 32%;
+}
+
+.marauders_subtitle img {
+  width: 21%;
+}
+
+.marauders_main img {
+  width: 42%;
+}
+
+.marauders_title,
+.marauders_subtitle,
+.marauders_main,
+.foot {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showBack {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.marauders_subtitle {
+  text-align: center;
+}
+
+.foot {
+  opacity: 0;
+  width: 2%;
+  position: absolute;
+  transform: rotate(305deg);
+}
+
+.left_foot {
+  left: 70px;
+  top: 660px;
+}
+
+.right_foot {
+  left: 112px;
+  top: 620px;
+}
+
+.map-container {
+  width: 95%;
+  outline: 4px solid #000;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.map-find {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  padding: 40px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.btn-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
